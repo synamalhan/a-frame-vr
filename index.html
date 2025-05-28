@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a-assets>
+    <img id="skyTexture" src="planet_textures/nightsky.jpg">
+  </a-assets>
+
+  <a-scene>
+    <a-sky src="#skyTexture"></a-sky>
+
+    <!-- SUN -->
+    <a-sphere id="sun"
+              position="0 1.25 -5"
+              radius="3"
+              src="planet_textures/sun.jpeg"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 22224">
+    </a-sphere>
+
+    <!-- MERCURY -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 8800">
+      <a-sphere position="4 0 0"
+                radius="0.1"
+                src="planet_textures/mercury.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 58650">
+      </a-sphere>
+    </a-entity>
+
+    <!-- VENUS -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 22400">
+      <a-sphere position="7 0 0"
+                radius="0.2"
+                src="planet_textures/venus.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 243000">
+      </a-sphere>
+    </a-entity>
+
+    <!-- EARTH -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 36500">
+      <a-sphere position="10 0 0"
+                radius="0.3"
+                src="planet_textures/earth.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 864">
+      </a-sphere>
+    </a-entity>
+
+    <!-- MARS -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 68700">
+      <a-sphere position="15 0 0"
+                radius="0.2"
+                src="planet_textures/mars.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 8864">
+      </a-sphere>
+    </a-entity>
+
+    <!-- JUPITER -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 433300">
+      <a-sphere position="52 0 0"
+                radius="1.5"
+                src="planet_textures/jupiter.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 3528">
+      </a-sphere>
+    </a-entity>
+
+    <!-- SATURN -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 1075900">
+      <a-sphere position="95 0 0"
+                radius="1.2"
+                src="planet_textures/saturn.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 3952">
+      </a-sphere>
+    </a-entity>
+
+    <!-- URANUS -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 3068700">
+      <a-sphere position="192 0 0"
+                radius="0.7"
+                src="planet_textures/uranus.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 60480">
+      </a-sphere>
+    </a-entity>
+
+    <!-- NEPTUNE -->
+    <a-entity position="0 1.25 -5"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 6019000">
+      <a-sphere position="301 0 0"
+                radius="0.7"
+                src="planet_textures/neptune.jpeg"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 60480">
+      </a-sphere>
+    </a-entity>
+
+  </a-scene>
+</body>
+</html>
